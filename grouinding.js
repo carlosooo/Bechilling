@@ -54,7 +54,7 @@ submitBtn.addEventListener("click", function(event){
   progressText[current - 1].classList.add("active");
   current += 1;
   setTimeout(function(){
-    window.location.href = "html.html";
+    window.location.href = "index.html";
 });
 });
 prevBtnSec.addEventListener("click", function(event){
