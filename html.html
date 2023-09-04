@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ansiedade</title>
+
+  <link rel="stylesheet" type="text/css" href="html.css" />
+
+</head>
+
+<body>
+  <link rel="stylesheet" type="text/css" href="html.css">
+  <nav class="navbar navbar-expand-lg " style="background-color: #290661;">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#" style="color: white;">Barra de Navegação</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white;">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Próposito</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: white;"> Métodos</a>
+            <ul class="dropdown-menu" style="background-color: #290661; color: white;">
+              <li><a class="dropdown-item" href="grouinding.html" style="color: white;">
+                  <p>Exercício de Grouinding [Recomendado]</p>
+                </a></li>
+              <li><a class="dropdown-item" href="respiracoes.html" style="color: white;">
+                  <p>Respirações</p>
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Métodos Explicados</a>
+          </li>
+        </ul>
+
+        <div class="controls">
+          <button id="prevBtn" class="btn btn-primary"><i class="fas fa-chevron-left"></i> </button>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <audio id="myAudio" controls>
+
+          <source src="musicas/musica1.mp3" type="audio/mpeg">
+          <source src="musicas/musica2.mp3" type="audio/ogg">
+          <source src="musicas/musica3.mp3" type="audio/ogg">
+          <source src="musicas/musica4.mp3" type="audio/ogg">
+          <source src="musicas/musica5.mp3" type="audio/ogg">
+          <source src="musicas/musica6.mp3" type="audio/ogg">
+          <source src="musicas/musica7.mp3" type="audio/ogg">
+          <source src="musicas/musica8.mp3" type="audio/ogg">
+          <source src="musicas/musica9.mp3" type="audio/ogg">
+          <source src="musicas/musica10.mp3" type="audio/ogg">
+          <source src="musicas/musica11.mp3" type="audio/ogg">
+          <source src="musicas/musica12.mp3" type="audio/ogg">
+          <source src="musicas/musica13.mp3" type="audio/ogg">
+          <source src="musicas/musica14.mp3" type="audio/ogg">
+          <source src="musicas/musica15.mp3" type="audio/ogg">
+          <source src="musicas/musica16.mp3" type="audio/ogg">
+          <source src="musicas/musica17.mp3" type="audio/ogg">
+          <source src="musicas/musica18.mp3" type="audio/ogg">
+        </audio>
+
+
+        <div class="controls">
+
+          <button id="nextBtn" class="btn btn-primary"> <i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <script>
+          const audio = document.getElementById('myAudio');
+          const prevBtn = document.getElementById('prevBtn');
+          const nextBtn = document.getElementById('nextBtn');
+          const musicas = [
+            'musicas/musica1.mp3',
+            'musicas/musica2.mp3',
+            'musicas/musica3.mp3',
+            'musicas/musica4.mp3',
+            'musicas/musica5.mp3',
+            'musicas/musica6.mp3',
+            'musicas/musica7.mp3',
+            'musicas/musica8.mp3',
+            'musicas/musica9.mp3',
+            'musicas/musica10.mp3',
+            'musicas/musica11.mp3',
+            'musicas/musica12.mp3',
+            'musicas/musica13.mp3',
+            'musicas/musica14.mp3',
+            'musicas/musica15.mp3',
+            'musicas/musica16.mp3',
+            'musicas/musica17.mp3',
+            'musicas/musica18.mp3',
+
+          ];
+          let musicaAtual = 0;
+
+          function tocarMusica() {
+            audio.src = musicas[musicaAtual];
+            audio.play();
+          }
+
+          function proximaMusica() {
+            musicaAtual = (musicaAtual + 1) % musicas.length;
+            tocarMusica();
+          }
+
+          function musicaAnterior() {
+            musicaAtual = (musicaAtual - 1 + musicas.length) % musicas.length;
+            tocarMusica();
+          }
+
+          prevBtn.addEventListener('click', musicaAnterior);
+          nextBtn.addEventListener('click', proximaMusica);
+
+          tocarMusica();
+        </script>
+
+        <script src="js.js"></script>
+
+  </nav>
+
+  <script>
+    function redirecionar1() {
+      window.location.href = "grouinding.html";
+    }
+  </script>
+
+  <script class="letrinha">
+    function redirecionar2() {
+      window.location.href = "respiracoes.html";
+    }
+  </script>
+
+  <h5 style="color: white" ;> Qual tipo de Exercício gostaria de fazer para se tranquilizar?</h5>
+
+  <button name="metodo1" type="button" class="btn btn-dark btn-lg" onclick="redirecionar1()">Gostaria de utilizar do
+    Método de Grouinding?</button>
+  <button name="metodo2" type="button" class="btn btn-dark btn-lg" onclick="redirecionar2()">Prefere fazer series de
+    Respirações?</button>
+
+  <div class="proposito" style="color: whitesmoke; text-align: center">
+    <h3 style="text-align: center; color: whitesmoke;"> Propósito </h3>
+    Este projeto tem como objetivo principal ajudar estudantes de diferentes faixas
+    etárias a conter sua ansiedade, assim melhorando o âmbito escolar
+
+  </div>
+
+  <div class="explicado" style="color: whitesmoke;">
+    <h3 style="text-align: center; color: whitesmoke;"> Metódos Explicados </h3> <br>
+    <h4 style="text-align: left; color: whitesmoke;"> • Metódo de Grouinding </h4>
+    <div class="grouinding">
+      <div class="texto-grouinding">Em momentos de crises de ansiedade, é importante contar com ferramentas que possam proporcionar alívio imediato e
+      ajudar a pessoa a se acalmar.
+      Uma técnica eficaz e acessível é o método de ancoragem sensorial, que se baseia no aproveitamento dos sentidos
+      humanos para redirecionar o foco da mente.
+      Composto por cinco passos simples, esse método pode ser uma ferramenta valiosa no manejo da ansiedade. Vamos
+      conhecer cada um deles: </div> 
+      <br> <br>
+      <h5>• Visão - Cinco Coisas que te Cercam </h5>
+      <div class="acoplado"> Identifique cinco elementos visuais ao seu redor, como objetos, pessoas ou natureza. Isso ajuda a afastar
+      preocupações e promover tranquilidade.</div>
+      <br>
+      <h5>• Tato - Quatro Texturas que Pode Sentir </h5>
+      <div class="acoplado"> Toque quatro objetos diferentes, explorando texturas e sensações táteis. Isso cria uma conexão imediata com o
+      momento presente.</div>
+      <br>
+      <h5>• Audição - Três Sons no Ambiente </h5>
+      <div class="acoplado"> Identifique três sons à sua volta. Se o ambiente estiver silencioso, relembre sons agradáveis, como chuva ou
+      vento, para desviar a mente da ansiedade.</div>
+      <br>
+      <h5>• Olfato - Dois Aromas que Percebe </h5>
+      <div class="acoplado">Foque em dois aromas presentes, como fragrâncias ou cheiros do ambiente. Isso contribui para uma sensação de
+      calma.</div>
+      <h5>• Paladar - Um Sabor que Experimenta </h5>
+      <div class="acoplado">Reconheça um sabor que esteja experimentando no momento, como um chiclete ou bebida. Isso ajuda a ancorar a mente
+      e relaxar.</div>
+      <br> <br>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

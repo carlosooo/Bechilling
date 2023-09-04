@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+  background-color: rgb(194, 195, 243);
+  background-size: cover;
+
+}
+h1 {
+  font-weight: 600;
+  text-align: center;
+  filter: drop-shadow(-5px 0px 3px #ffffff);
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+  background: url("imagens/fundo2.jpg"), -webkit-linear-gradient(bottom, #0250c58a, #d43f8c96);
+  background-size: cover;
+  font-family: 'Kaffeesatz Light';
+  font-size: x-large
+}
+
+.btn-lg {
+  font-size: large !important;
+}
+
+
+.dropdown-menu {
+  background-color: rgb(#290661);
+  color: rgb(#290661);
+}
+
+.nav-link:hover {
+  background-color: rgba(17, 3, 38, 0.8);
+  color: black;
+}
+
+.dropdown-menu {
+  background-color: rgb(#290661);
+  color: #290661;
+
+}
+
+.dropdown-item:hover {
+  background-color: rgba(17, 3, 38, 0.8);
+  color: black;
+}
+
+
+.btn-primary {
+  background-color: #290661;
+  border-color: #0b090e;
+}
+
+.btn-primary:hover {
+  background-color: rgba(17, 3, 38, 0.8);
+  border-color: #0b090e
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #290661 !important;
+  border-color: #0b090e !important;
+  box-shadow: none !important;
+}
+
+.proposito {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding-top: 80px;
+  padding-right: 300px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+}
+
+.explicado {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding-top: 80px;
+  padding-right: 300px;
+  padding-bottom: 80px;
+  padding-left: 300px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.grouinding {
+  text-align: left;
+  font-size: large;
+}
+
+.acoplado {
+  font-size: large;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
+.texto-grouinding {
+  font-size: 20px;
+}
