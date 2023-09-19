@@ -1,9 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos móveis */
+}
+
 body {
-  background-color: rgb(194, 195, 243);
+  background-color: #f3e6df;
   background-size: cover;
 
 }
+
+.dropdown-menu {
+  background-color: rgb(#76add0);
+  color: rgb(#76add0);
+}
+
+.nav-link:hover {
+  background-color: #548caf;
+  color: #ffffff
+}
+
+.dropdown-menu {
+  background-color: rgb(#76add0);
+  color: #76add0;
+
+}
+
+.dropdown-item:hover {
+  background-color: #548caf;
+  color: #ffffff;
+}
+
+
+.btn-primary {
+  background-color: #76add0;
+  border-color: #76add0;
+}
+
+.btn-primary:hover {
+  background-color: #548caf;
+  border-color: #ffffff
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #76add0 !important;
+  border-color: #76add0 !important;
+  box-shadow: none !important;
+}
+
 h1 {
   font-weight: 600;
   text-align: center;

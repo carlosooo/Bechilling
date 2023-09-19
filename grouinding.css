@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos móveis */
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -11,15 +16,15 @@ body{
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
-  background: url("imagens/fundo2.jpg"), -webkit-linear-gradient(bottom, #0250c58a, #d43f8c96);
+  background-color: #76add0;
 }
 ::selection{
-  color: #fff;
-  background: #85107f;
+  color: whitesmoke;
+  background: #76add0;
 }
 .container{
   width: 400px;
-  background: #fff;
+  background: whitesmoke;
   text-align: center;
   border-radius: 5px;
   padding: 30px 35px 10px 35px;
@@ -76,10 +81,10 @@ form .page .field button{
   width: 100%;
   height: calc(100% + 5px);
   border: none;
-  background: #85107f;
+  background: #76add0;
   margin-top: -20px;
   border-radius: 5px;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
@@ -129,8 +134,8 @@ form .page .btns button.next{
   line-height: 25px;
 }
 .progress-bar .step .bullet.active{
-  border-color: #85107f;
-  background: #85107f;
+  border-color: #76add0;
+  background: #76add0;
 }
 .progress-bar .step .bullet span{
   position: absolute;
@@ -151,7 +156,7 @@ form .page .btns button.next{
   background: #262626;
 }
 .progress-bar .step .bullet.active:after{
-  background: #85107f;
+  background: #76add0;
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 0.3s linear forwards;
@@ -166,7 +171,7 @@ form .page .btns button.next{
   display: none;
 }
 .progress-bar .step p.active{
-  color: #85107f;
+  color: #76add0;
   transition: 0.2s linear;
 }
 .progress-bar .step .check{
@@ -179,6 +184,6 @@ form .page .btns button.next{
 }
 .progress-bar .step .check.active{
   display: block;
-  color: #fff;
+  color: whitesmoke;
 }
 
