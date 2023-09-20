@@ -14,16 +14,16 @@ const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
 let current = 1;
 
-nextBtnFirst.addEventListener("click", function(event){
+nextBtnFirst.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-25%";
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
-  nextBtnFirst.focus 
+  nextBtnFirst.focus
 });
-nextBtnSec.addEventListener("click", function(event){
+nextBtnSec.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-50%";
   bullet[current - 1].classList.add("active");
@@ -32,7 +32,7 @@ nextBtnSec.addEventListener("click", function(event){
   current += 1;
   nextBtnSec.focus
 });
-nextBtnThird.addEventListener("click", function(event){
+nextBtnThird.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-75%";
   bullet[current - 1].classList.add("active");
@@ -40,7 +40,7 @@ nextBtnThird.addEventListener("click", function(event){
   progressText[current - 1].classList.add("active");
   current += 1;
 });
-nextBtnFourth.addEventListener("click", function(event){
+nextBtnFourth.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-100%";
   bullet[current - 1].classList.add("active");
@@ -48,16 +48,16 @@ nextBtnFourth.addEventListener("click", function(event){
   progressText[current - 1].classList.add("active");
   current += 1;
 });
-submitBtn.addEventListener("click", function(event){
+submitBtn.addEventListener("click", function (event) {
   bullet[current - 1].classList.add("active");
   progressCheck[current - 1].classList.add("active");
   progressText[current - 1].classList.add("active");
   current += 1;
-  setTimeout(function(){
+  setTimeout(function () {
     window.location.href = "index.html";
+  });
 });
-});
-prevBtnSec.addEventListener("click", function(event){
+prevBtnSec.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "0%";
   bullet[current - 2].classList.remove("active");
@@ -65,7 +65,7 @@ prevBtnSec.addEventListener("click", function(event){
   progressText[current - 2].classList.remove("active");
   current -= 1;
 });
-prevBtnThird.addEventListener("click", function(event){
+prevBtnThird.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-25%";
   bullet[current - 2].classList.remove("active");
@@ -73,7 +73,7 @@ prevBtnThird.addEventListener("click", function(event){
   progressText[current - 2].classList.remove("active");
   current -= 1;
 });
-prevBtnFourth.addEventListener("click", function(event){
+prevBtnFourth.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-50%";
   bullet[current - 2].classList.remove("active");
@@ -82,7 +82,7 @@ prevBtnFourth.addEventListener("click", function(event){
   current -= 1;
 });
 
-prevBtnFiveth.addEventListener("click", function(event){
+prevBtnFiveth.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-75%";
   bullet[current - 2].classList.remove("active");

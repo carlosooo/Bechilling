@@ -6,18 +6,49 @@
 }
 
 body {
-  /*background:  -webkit-linear-gradient(bottom, #c4c3d0, #55555596); */
-  background-color: #f3e6df;
+  background-color: #f5e5e5;
+  background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Kaffeesatz Light';
   font-size: x-large;
   min-height: 100vh;
+  background-position: right;
 }
 
-.btn-lg {
-  font-size: large !important;
+
+.botao {
+  position: absolute;
+  right: 100px;
+  margin-left: 1300px;
+}
+.botao button:hover{
+  background-color: #548caf;
+  color: black;
+}
+/* Estilo para cada botão */
+.botao button {
+  display: block;
+  margin-top: 200px;
+  padding: 30px 50px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: #f5e5e5;
+  background-color: rgb(141, 194, 228); /* Cor de fundo do botão */
+  color: black; /* Cor da fonte do botão */
 }
 
+.bemvindo {
+  border: 2px solid black; /* Adicione uma borda preta de 2px */
+  border-radius: 15px; /* Adicione bordas arredondadas */
+  padding: 25px 25px; /* Adicione algum espaço interno para o conteúdo */
+}
+
+.resumo {
+  border: 2px dotted black; /* Adicione uma borda preta de 2px */
+  border-radius: 15px; /* Adicione bordas arredondadas */
+  padding: 15px 30px; /* Adicione algum espaço interno para o conteúdo */
+}
 
 .dropdown-menu {
   background-color: rgb(#76add0);
@@ -32,6 +63,7 @@ body {
 .dropdown-menu {
   background-color: rgb(#76add0);
   color: #76add0;
+  border-radius: 15px;
 
 }
 
@@ -58,26 +90,24 @@ body {
   box-shadow: none !important;
 }
 
-.btn btn-dark btn-lg{
+.btn btn-dark btn-lg {
   margin: 700px;
 }
+
 .bemvindo {
   max-width: 400px;
   font-size: 35px;
   line-height: 45px;
   font-weight: bold;
-  margin: 100px;
+  margin: 80px;
   margin-top: 120px;
 }
 
 .resumo {
-  max-width: 500px;
+  max-width: 600px;
   font-size: 20px;
   line-height: 20px;
-  font-weight:lighter;
+  font-weight: 150px;
   margin: 80px;
   margin-top: 200px;
 }
-
-
-

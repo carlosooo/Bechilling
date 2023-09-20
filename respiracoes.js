@@ -26,7 +26,7 @@ botao.addEventListener("click", async (e) => {
         for (let remainingTime of timerGenerator) {
             if (typeof remainingTime === 'number') {
                 // Update the timer display
-                timerContainer.textContent = remainingTime ;
+                timerContainer.textContent = remainingTime;
                 messageContainer.textContent = index
             } else if (remainingTime instanceof Promise) {
                 // Wait for 1 second before the next iteration
